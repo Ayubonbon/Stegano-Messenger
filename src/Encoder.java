@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Encoder {
 
     public static void main(String[] args) {
-        
+
         Scanner sc = new Scanner(System.in);
          /*
             Logic for converting text to 8-bit binary value
@@ -33,7 +33,7 @@ public class Encoder {
             for (int bit = 7; bit >= 0; bit--) {
                 binary.append((ascii & (1 << bit)) != 0 ? '1' : '0');
             }
-            binary.append(' ');
+
         }
 
         System.out.println(binary);
@@ -52,7 +52,7 @@ public class Encoder {
 
         BufferedImage image ;
         try {
-             image = ImageIO.read(imgfile);
+            image = ImageIO.read(imgfile);
 
         } catch (IOException e) {
             System.out.println("Error: Cannot read image file.");
@@ -119,11 +119,6 @@ public class Encoder {
         } catch (IOException e) {
             System.out.println("Error writing encoded image.");
         }
-
-
-
-
-
         sc.close();
     }
 }
