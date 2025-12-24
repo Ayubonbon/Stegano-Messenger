@@ -6,8 +6,6 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
-// test change
-
 public class Decoder {
 
     public static void main(String[] args) {
@@ -49,7 +47,7 @@ public class Decoder {
             }
         }
 
-        // Convert binary → text (every 8 bits)
+        // Convert binary  text (every 8 bits)
         StringBuilder message = new StringBuilder();
 
         for (int i = 0; i + 8 <= binary.length(); i += 8) {
@@ -72,10 +70,6 @@ public class Decoder {
         System.out.println("\nDecoded message:");
         System.out.println(finalMessage);
 
-
-
         sc.close();
-
-
     }
 }
